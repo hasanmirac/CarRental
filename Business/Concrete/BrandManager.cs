@@ -27,5 +27,35 @@ namespace Business.Concrete
         {
             return _brandDal.Get(b => b.BrandId == brandid);
         }
+        public void Add(Brand brand)
+        {
+            if (brand.BrandName.Length > 2)
+            {
+                _brandDal.Add(brand);
+                Console.WriteLine("Marka başarıyla eklendi.");
+            }
+            else
+            {
+                Console.WriteLine("Lütfen marka ismini 2 karakterden fazla giriniz.");
+            }
+        }
+
+        public void Delete(Brand brand)
+        {
+            _brandDal.Delete(brand);
+            Console.WriteLine("Marka başarıyla silindi.");
+        }
+        public void Update(Brand brand)
+        {
+            if (brand.BrandName.Length >= 2)
+            {
+                _brandDal.Update(brand);
+                Console.WriteLine("Marka başarıyla güncellendi.");
+            }
+            else
+            {
+                Console.WriteLine("Lütfen marka isminin uzunluğunu 1 karakterden fazla giriniz.");
+            }
+        }
     }
 }
