@@ -9,15 +9,14 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarTest();
+            //CarTest();
             //BrandTest();
-
         }
 
         private static void BrandTest()
         {
             BrandManager brandManager = new BrandManager(new EfBrandDal());
-            foreach (var brand in brandManager.GetAll())
+            foreach (var brand in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brand.BrandName);
             }
@@ -31,7 +30,7 @@ namespace ConsoleUI
 
             if (result.Success == true)
             {
-                foreach (var car in carManager.GetCarsDetails().Data)
+                foreach (var car in result.Data)
                 {
                     Console.WriteLine(car.BrandName + " - " + car.ColorName + " - " + car.DailyPrice);
                 }
