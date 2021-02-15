@@ -37,12 +37,10 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarDeleted);
         }
 
-
-
         public IDataResult<List<Car>> GetAll()
         {
             // İş kodları
-            if (DateTime.Now.Hour==22)
+            if (DateTime.Now.Hour==13)
             {
                 return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
             }

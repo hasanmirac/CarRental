@@ -26,9 +26,13 @@ namespace Business.Constans
         public static string UserDeleted = "Kullanıcı silindi";
         public static string UserListed = "Kullanıcılar listelendi";
         public static string UserUptaded = "Kullanıcı güncellendi";
-        internal static string RentalUpdated;
-        internal static string RentalUpdateFailed;
-        internal static string RentalAddFailed;
-        internal static string RentalAdded;
+        public static string RentalUpdated="Kayıt güncellendi";
+        public static string RentalUpdateFailed = "Güncelleme başarısız";
+        public static string RentalAddFailed="Kayıt başarısız";
+        public static string RentalAdded="Kayıt eklendi";
+        public static string CustomerAdded="Müşteri eklendi";
+        public static string CustomerDeleted="Müşteri silindi";
+        public static string CustomerUptaded="Müşteri güncellendi";
+        public static string CustomersListed="Müşteriler listelendi";
     }
 }
