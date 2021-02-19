@@ -30,9 +30,11 @@ namespace Business.Constans
         public static string RentalUpdateFailed = "Güncelleme başarısız";
         public static string RentalAddFailed="Kayıt başarısız";
         public static string RentalAdded="Kayıt eklendi";
+        public static string RentalsListed="Kayıtlar listelendi";
         public static string CustomerAdded="Müşteri eklendi";
         public static string CustomerDeleted="Müşteri silindi";
         public static string CustomerUptaded="Müşteri güncellendi";
         public static string CustomersListed="Müşteriler listelendi";
+
     }
 }
