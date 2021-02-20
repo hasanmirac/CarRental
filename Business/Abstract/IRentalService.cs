@@ -10,7 +10,8 @@ namespace Business.Abstract
     public interface IRentalService
     {
         IResult Add(Rental rental);
-        IResult UpdateReturnDate(int carId);      
+        IResult UpdateReturnDate(int carId);
+        IResult CheckReturnDate(int carId);
         IDataResult<List<Rental>> GetAll();
         IDataResult<List<Rental>> GetByCarId(int carId);
         IDataResult<List<RentalDetailDto>> GetRentalDetails();
