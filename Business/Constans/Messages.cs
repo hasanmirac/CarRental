@@ -35,6 +35,9 @@ namespace Business.Constans
         public static string CustomerDeleted="Müşteri silindi";
         public static string CustomerUptaded="Müşteri güncellendi";
         public static string CustomersListed="Müşteriler listelendi";
-
+        public static string FailAddedImageLimit="Ekleme başarısız. Ekleme limiti doldu";
+        public static string CarImageAdded="Resim eklendi";
+        public static string CarImageUpdated="Araba resmi güncellendi";
+        public static string CarImageDeleted="Araba resmi silindi";
     }
 }
