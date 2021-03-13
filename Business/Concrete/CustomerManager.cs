@@ -8,6 +8,7 @@ using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -49,6 +50,11 @@ namespace Business.Concrete
         {
             _customerDal.Update(customer);
             return new SuccessResult(Messages.CustomerUptaded);
+        }
+
+        public IDataResult<List<CustomerInfoDto>> GetCustomerInfo()
+        {
+            return new SuccessDataResult<List<CustomerInfoDto>>(_customerDal.GetCustumerInfo());
         }
     }
 }
